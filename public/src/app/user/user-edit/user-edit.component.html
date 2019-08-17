@@ -1,4 +1,4 @@
-<h3>User Edit Component</h3>
+<!-- <h3>User Edit Component</h3> -->
 <div class="card text-center">
     <form (submit)=update()>
       <div class="card-header">
@@ -7,13 +7,14 @@
       <div class="card-body">
         <div class="row">
           <div class="col-md-12">
+          <!-- {{editUser}} -->
   
             <div class="input-group">
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-user"></i></span>
                 </div>
-                <input type="text" class="form-control" name="first_name" [(ngModel)]="editUser.first_name" placeholder="nombre">
+                <input type="text" class="form-control" name="nombre" [(ngModel)]="editUser.nombre" placeholder="nombre">
               </div>
   
   
@@ -21,14 +22,22 @@
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-user"></i></span>
                 </div>
-                <input type="text" class="form-control" name="last_name" [(ngModel)]="editUser.last_name" placeholder="apellido">
+                <input type="text" class="form-control" name="marca" [(ngModel)]="editUser.marca" placeholder="marca">
               </div>
   
               <div class="input-group mb-3">
                 <div class="input-group-prepend">
                   <span class="input-group-text"><i class="fa fa-envelope"></i></span>
                 </div>
-                <input type="text" class="form-control" name="email" [(ngModel)]="editUser.email" placeholder="em@il">
+                <input type="text" class="form-control" name="detalles" [(ngModel)]="editUser.detalles"
+                  placeholder="detalles">
+              </div>
+  
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+                </div>
+                <input type="number" class="form-control" name="precio" [(ngModel)]="editUser.precio" placeholder="precio">
               </div>
   
             </div>
