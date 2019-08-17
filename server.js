@@ -27,6 +27,6 @@ app.use('/', apiRouter);
 // console.log(__dirname);
 //static files
 app.use(express.static(path.join(__dirname , 'public/dist/user')));
-app.listen(3000, ()=>{
+app.listen(process.env.PORT || 3000, ()=>{
     console.log('escuchando');
 })
