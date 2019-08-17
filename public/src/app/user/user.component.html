@@ -1,0 +1,46 @@
+<app-nav></app-nav>
+<br>
+<br>
+<label class="rpt" for="rpt"></label>
+<input type="checkbox" id="rpt"/>
+<div class="container-monkey">
+  <div class="monkey">
+    <div class="monkey__head">
+      <div class="monkey__head--ear"></div>
+      <div class="monkey__face">
+        <div class="monkey__face--eye left">
+          <div class="monkey__face--eye__pupil"></div>
+        </div>
+        <div class="monkey__face--eye right">
+          <div class="monkey__face--eye__pupil"></div>
+        </div>
+        <div class="monkey__face--circle"></div>
+        <div class="monkey__face--nose"></div>
+        <div class="monkey__face--mouth"><span></span></div>
+      </div>
+    </div>
+    <div class="monkey__body"></div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+
+<div class="container">
+    <!-- <h1>User Main component </h1>
+    
+    <pre>
+      {{ users | json }}
+    </pre> -->
+
+
+    
+    
+    <app-user-list 
+    [users]="users"
+    (destroyUserEvent)="destroy($event)"
+    (updateUserEvent)= "update($event)"
+    ></app-user-list>
+    
+    <app-user-new (createNewUserEvent)="create($event)" ></app-user-new>
+</div>

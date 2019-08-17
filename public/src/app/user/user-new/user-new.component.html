@@ -1,0 +1,62 @@
+<!-- <h3>User New Component</h3> -->
+
+<div class="card text-center">
+  <form (submit)=create()>
+    <div class="card-header">
+      Nuevo Producto
+      <div class="pull-right">
+        <!-- <button class="btn btn-danger" (click)="show = !show"><i class="fa fa-times" aria-hidden="true"></i></button> -->
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-md-12">
+
+
+          <div class="input-group">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" name="nombre" [(ngModel)]="newUser.nombre" placeholder="nombre">
+            </div>
+
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-user"></i></span>
+              </div>
+              <input type="text" class="form-control" name="marca" [(ngModel)]="newUser.marca" placeholder="marca">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+              </div>
+              <input type="text" class="form-control" name="detalles" [(ngModel)]="newUser.detalles"
+                placeholder="detalles">
+            </div>
+
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text"><i class="fa fa-envelope"></i></span>
+              </div>
+              <input type="number" class="form-control" name="precio" [(ngModel)]="newUser.precio" placeholder="precio">
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="card-footer text-muted">
+      <div class="col-md-12">
+        <div class="text-right">
+          <button type="submit" class="btn btn-success">OK</button>
+
+        </div>
+      </div>
+    </div>
+  </form>
+</div>
+<hr>
